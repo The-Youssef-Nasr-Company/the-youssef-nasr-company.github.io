@@ -5,7 +5,7 @@ const divClassHome = document.getElementById("home");
 //#endregion
 //#region All functions
 function youssefLandXScratch(reason, ticks) {
-    console.warn("Redirecting to: https://the-youssef-nasr-company.github.io/Youssef-Land-X-Scratch/ because of " + reason + " in " + ticks + " tick(s)")
-    document.href = "https://the-youssef-nasr-company.github.io/Youssef-Land-X-Scratch/";
+    console.log("Redirecting to: https://the-youssef-nasr-company.github.io/Youssef-Land-X-Scratch/ because of " + reason + " in " + ticks + " tick(s)")
+    location.href = "https://github.com/The-Youssef-Nasr-Company/Youssef-Land-X-Scratch";
 }
 //#endregion
