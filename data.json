@@ -1,0 +1,8 @@
+{
+    "name": "the-youssef-nasr-company.github.io",
+    "description": "Website for The Youssef Nasr Company, with domain \"the-youssef-nasr-company.github.io\"",
+    "private": false,
+    "dependencies": {
+        "github-pages": "latest"
+    }
+}
