@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700,800,900">
         <style>
+            body {
+                text-align: center;
+            }
             * {
                 margin: 0;
                 padding: 0;
@@ -16,7 +19,31 @@
                 color: lime;
             }
             button {
-                background: greenyellow;
+                background: green;
+                border-radius: 2px solid black;
+                transition: 0.2s;
+                margin: 8px;
+                padding: 8px;
+            }
+            button:hover {
+                background: lightgreen;
+            }
+            a {
+                color: green;
+                text-decoration: underline;
+            }
+            a:visited {
+                color: limegreen;
+            }
+            a:disabled {
+                color: red;
+                text-decoration: none;
+            }
+            a:disabled:hover {
+                color: lightcoral;
+            }
+            a:disabled:visited {
+                color: crimson;
             }
             footer {
                 font-size: small;
@@ -33,7 +60,7 @@
             <h1>Download the Scratch 2 Online Editor now!</h1>
             <button onclick="gotoUrl('downloadscratch2onlineeditor.html')">Click here to download the Shockwave Flash object now</button>
         </div>
-        <div class="copyright"><footer id="copyright">© 2022 Youssef. Proudly made with <a target="_blank" href="https://code.visualstudio.com">VS Code</a>.</footer></div>
+        <div class="copyright"><footer id="copyright">© 2022 Youssef. Proudly made with <a rel="noopener" target="_blank" href="https://code.visualstudio.com">VS Code</a>, NGINX (testing using <a rel="noopener" target="_blank" href="https://docker.com">Docker</a>) & <a rel="noopener" target="_blank" href="https://pages.github.com">GitHub Pages</a>.</footer></div>
     </body>
     <script src="src/main.js"></script>
 </html>
