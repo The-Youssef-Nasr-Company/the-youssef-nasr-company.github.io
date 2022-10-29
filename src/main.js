@@ -6,3 +6,6 @@ console.warn("WARNING: Youssef Land X Scratch is no longer on GitHub. It will be
 function gotoUrl(url) {
     window.open(url);
 }
+function gotoUrlInCurrentTab(url) {
+    location.href = url;
+}
