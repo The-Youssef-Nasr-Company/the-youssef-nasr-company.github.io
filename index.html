@@ -20,7 +20,8 @@
             }
             button {
                 background: green;
-                border-radius: 10px solid black;
+                border: 2px solid black;
+                border-radius: 10px;
                 transition: 0.2s;
                 margin: 8px;
                 padding: 8px;
@@ -30,69 +31,42 @@
             }
             a {
                 color: green;
-                text-decoration: underline;
+                text-decoration: none;
+                margin: 0;
+                padding: 0;
             }
             a:visited {
                 color: limegreen;
             }
-            a:disabled {
-                color: red;
+            #links h3 {
+                color: limegreen;
+            }
+            button:disabled {
+                background: crimson;
+                color: black;
+                transition: 0.2s;
                 text-decoration: none;
             }
-            a:disabled:hover {
-                color: lightcoral;
-            }
-            a:disabled:visited {
-                color: crimson;
+            button:disabled:hover {
+                background-color: lightcoral;
             }
             footer {
                 font-size: small;
             }
         </style>
-        <title>The Youssef Nasr Company on GitHub</title>
+        <title>TYNC</title>
     </head>
     <body>
-        <div id="home">
-            <h1>The Youssef Nasr Company</h1>
-            <p>Welcome to The Youssef Nasr Company! This is where we become <span class="real funni">REALLY FUN!</span></p>
+        <div id="links">
+            <h3>The Youssef Nasr Company</h3>
+            <a><button disabled="disabled">Home</button></a>
+            <a href="news"><button>News</button></a>
         </div>
+        <p id="home">Welcome to The Youssef Nasr Company! This is where we become <span class="real funni">REALLY FUN!</span></p>
         <div id="downloadScratch2OnlineEditorNow">
-            <h1>Download the Scratch 2 Online Editor now!</h1>
-            <button onclick="gotoUrlInCurrentTab('downloadscratch2onlineeditor.html')" title="downloadscratch2onlineeditor.html">Spam here to download the Shockwave Flash object now</button>
+            <h4>Download the Scratch 2 Online Editor now!</h4>
+            <a href="downloadscratch2onlineeditor.html"><button>Click here to download the Shockwave Flash object now</button></a>
         </div>
         <div class="copyright"><footer id="copyright">© 2022 Youssef. Proudly made with <a rel="noopener" target="_blank" href="https://code.visualstudio.com">VS Code</a>, NGINX (testing using <a rel="noopener" target="_blank" href="https://docker.com">Docker</a>) & <a rel="noopener" target="_blank" href="https://pages.github.com">GitHub Pages</a>.</footer></div>
     </body>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <script src="src/main.js"></script>
-    <script>
-        function hello() {
-            alert("Hello, world!")
-        }
-    </script>;
 </html>

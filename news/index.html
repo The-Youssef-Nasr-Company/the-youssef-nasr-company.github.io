@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700,800,900">
+    <style>
+            body {
+                text-align: center;
+            }
+            * {
+                font-family: "Ubuntu", sans-serif;
+                margin: 1px;
+                padding: 1px;
+            }
+            button {
+                background: green;
+                border: 2px solid black;
+                border-radius: 10px;
+                transition: 0.2s;
+                margin: 8px;
+                padding: 8px;
+            }
+            button:hover {
+                background: lightgreen;
+            }
+            a {
+                color: green;
+                text-decoration: none;
+            }
+            a:visited {
+                color: limegreen;
+            }
+            button:disabled {
+                background: crimson;
+                color: black;
+                transition: 0.2s;
+            }
+            button:disabled:hover {
+                background-color: lightcoral;
+            }
+            footer {
+                font-size: small;
+            }
+            #news,
+            .newsItem,
+            .newsItem * {
+                display: flex;
+                flex-direction: column;
+            }
+            #newsPageIsBorn {
+                color: green;
+            }
+            .creationDate {
+                color: gray;
+            }
+            li::marker {
+                text-align: center !important;
+            }
+    </style>
+    <title>TYNC News</title>
+</head>
+<body>
+    <div id="links">
+        <a href=".."><h3>The Youssef Nasr Company</h3></a>
+        <a href=".."><button>Home</button></a>
+        <a><button disabled="disabled">News</button></a>
+    </div>
+    <div id="news">
+        <div class="newsItem" id="newsPageIsBorn">
+            <p class="creationDate"><sub>08/12/2022</sub></p>
+            <h3>NEW! This page comes to life!</h3>
+            <p>This page has finally come to life!</p>
+        </div>
+        <div class="newsItem" id="liveServerTesting">
+            <p class="creationDate"><sub>08/12/2022 18:13</sub></p>
+            <h3>This gets tested using a live server when it's modified!</h3>
+            <p>Here's what to expect:</p>
+            <ol id="whatToExpect">
+                <li>You'll never see the changes 'cause it's a localhost server</li>
+                <li>The changes will be committed to GitHub after done</li>
+            </ol>
+        </div>
+    </div>
+    <div class="copyright"><footer id="copyright">© 2022 Youssef. Proudly made with <a rel="noopener" target="_blank" href="https://code.visualstudio.com">VS Code</a>, NGINX (testing using <a rel="noopener" target="_blank" href="https://docker.com">Docker</a>) & <a rel="noopener" target="_blank" href="https://pages.github.com">GitHub Pages</a>.</footer></div>
+</body>
+</html>
