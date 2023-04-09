@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TYNC 404 Error - Cannot Find GitHub Page</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700,800,900">
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: "Ubuntu", sans-serif;
-            }
-            body {
-                text-align: center;
-            }
-            .error.message #four-zero-four,
-            a {
-                color: crimson;
-                font-weight: bold;
-                text-decoration: none;
-            }
-        </style>
-    </head>
-    <body>
-        <h3><a href="https://the-youssef-nasr-company.github.io">The Youssef Nasr Company</a></h3>
-        <div class="error message">
-            <h3 id="four-zero-four">404 Error - Cannot Find GitHub Page</h1>
-            <p>This page cannot be found. We're really sorry, but the page URL you entered returned a 404 error because it doesn't exist, has existed before but not anymore, or the repo you're requesting doesn't have a GitHub Pages page. We're trying to tell you the truth.</p>
-            <p><a href="javascript:history.back()">Please go back to the page you were previously in.</a></p>
-        </div>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TYNC 404 Error - Can't Find GitHub Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700,800,900">
+    <style>
+        * {
+            margin: 1px;
+            padding: 1px;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .error.message #four-zero-four,
+        a {
+            color: crimson;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:hover {
+            color: lightcoral;
+            text-decoration: underline;
+        }
+
+        button {
+            margin: 8px;
+            padding: 8px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background: crimson;
+            color: black;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <h3><a href="https://the-youssef-nasr-company.github.io">The Youssef Nasr Company</a></h3>
+    <a href="/"><button>Home</button></a>
+    <a href="news"><button>News</button></a>
+    <div class="error message">
+        <h3 id="four-zero-four">404 Error - Can't Find GitHub Page</h1>
+        <img src="404.png">
+        <p>Youssef was killed trying to find the page you're looking for.</p>
+        <p><a href="javascript:history.back()">Please go back to the page you were previously in</a> or check the
+            developer console to be able to fix the problem.</p>
+    </div>
+    <div class="copyright">
+        <footer id="copyright">© 2022 Youssef. Proudly made with <a rel="noopener" target="_blank"
+                href="https://code.visualstudio.com">VS Code</a>, NGINX (testing using <a rel="noopener" target="_blank"
+                href="https://hub.docker.com">Docker</a>) & <a rel="noopener" target="_blank"
+                href="https://pages.github.com">GitHub Pages</a>.</footer>
+    </div>
+    <!-- Code injected by Youssef Land -->
+    <script src="https://unpkg.com/chalk?module" type="text/javascript module"></script>
+    <script>
+        console.error(chalk.bold("GitHub Pages: HTTP 404 Error") + "\nThis page does not exist. If you want this to exist, e-mail youssef.land@outlook.com or\ncontribute to this repository at https://github.com/The-Youssef-Nasr-Company/the-youssef-nasr-company.github.io and create a \"index.html\" in a new directory.\nWhen GitHub Actions is done deploying the GitHub Pages page, come back to this page to see the results.\n~ Youssef Nasr");
+    </script>
+</body>
+
 </html>
