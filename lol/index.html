@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700,800,900">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        * {
+            font-family: "Ubuntu", sans-serif;
+            margin: 1px;
+            padding: 1px;
+        }
+
+        button {
+            background: green;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: 0.2s;
+            margin: 8px;
+            padding: 8px;
+        }
+
+        button:hover {
+            background: lightgreen;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a:visited {
+            color: limegreen;
+            margin: 0;
+            padding: 0;
+        }
+
+        button:disabled {
+            font-weight: bold;
+            transition: 0.5s;
+            color: black;
+        }
+
+        button:disabled:hover {
+            background-color: lightcoral;
+        }
+
+        footer {
+            font-size: small;
+        }
+
+        #news,
+        .newsItem,
+        .newsItem * {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .newsItem ul li {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .newsItem ul li::before {
+            content: "•" !important;
+            margin-right: 5px !important;
+        }
+
+        #newsPageIsBorn {
+            color: green;
+        }
+
+        .creationDate {
+            color: gray;
+        }
+    </style>
+    <title>TYNC News</title>
+</head>
+
+<body>
+    <h1>The Troll</h1>
+    <p>hehehe... U TROLLED</p>
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png">
+    <iframe width="885" height="498" src="https://www.youtube.com/embed/8AX8SBkiTTg" title="You&#39;ve Been Trolled! (30 FPS, Medium HD [720p])" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+
+</html>
