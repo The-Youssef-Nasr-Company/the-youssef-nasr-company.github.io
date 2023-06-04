@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700,800,900">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        * {
+            font-family: "Ubuntu", sans-serif;
+            margin: 1px;
+            padding: 1px;
+        }
+
+        button {
+            background: green;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: 0.2s;
+            margin: 8px;
+            padding: 8px;
+        }
+
+        button:hover {
+            background: lightgreen;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a:visited {
+            color: limegreen;
+            margin: 0;
+            padding: 0;
+        }
+
+        button:disabled {
+            font-weight: bold;
+            transition: 0.5s;
+            color: black;
+        }
+
+        button:disabled:hover {
+            background-color: lightcoral;
+        }
+
+        footer {
+            font-size: small;
+        }
+
+        #news,
+        .newsItem,
+        .newsItem * {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .newsItem ul li {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .newsItem ul li::before {
+            content: "•" !important;
+            margin-right: 5px !important;
+        }
+
+        #newsPageIsBorn {
+            color: green;
+        }
+
+        .creationDate {
+            color: gray;
+        }
+    </style>
+    <title>Blocked Website</title>
+</head>
+
+<body>
+    <h1>Website blocked</h1>
+    <p>Sorry, but you have blocked this website using <a rel="noopener" target="_blank" href="https://blocksite.co">BlockSite</a>. <a href="javascript:history.back()">Go back</a> <strong>IMMEDIATELY</strong>.</p>
+    <div class="copyright">
+        <footer id="copyright">© 2022 Youssef. Proudly made with <a rel="noopener" target="_blank"
+                href="https://code.visualstudio.com">VS Code</a>, NGINX (testing using <a rel="noopener" target="_blank"
+                href="https://hub.docker.com">Docker</a>) & <a rel="noopener" target="_blank"
+                href="https://pages.github.com">GitHub Pages</a>.</footer>
+    </div>
+</body>
+
+</html>
